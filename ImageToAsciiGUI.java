@@ -28,14 +28,14 @@ public class ImageToAsciiGUI extends JFrame {
 
         asciiTextArea = new JTextArea();
         asciiTextArea.setEditable(false);
-        asciiTextArea.setFont(new Font("Monospaced", Font.PLAIN, 6));// default pixl size to 6
+        asciiTextArea.setFont(new Font("Monospaced", Font.PLAIN, 3));// default pixl size to 3
         asciiTextArea.setForeground(Color.CYAN); // setting color to aqua
         asciiTextArea.setBackground(Color.BLACK);// setting bg
         JScrollPane scrollPane = new JScrollPane(asciiTextArea);
 
         // pixelsize label and text field
         JLabel fontSizeLabel = new JLabel("pixle Size:");
-        fontSizeTextField = new JTextField("6", 5); // Default font size
+        fontSizeTextField = new JTextField("3", 5); // Default font size
         fontSizeTextField.addActionListener(e -> updateFontSize());
 
         
@@ -59,7 +59,7 @@ public class ImageToAsciiGUI extends JFrame {
         controlPanel.add(openImageButton);
 
         //warnings
-        messageArea = new JTextArea("For better results use ----> ( pixel-Size:2 or 3 but width must 3x or 2x of Height )");
+        messageArea = new JTextArea("Warning/guide: For better results use 1:1 ratio images <---> ( lower pixel-size equals to high res but increased load on pc ) <---> (change height and width to set you image accordingly)");
         messageArea.setEditable(false);
         messageArea.setForeground(Color.RED);
         messageArea.setBackground(Color.BLACK);
