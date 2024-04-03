@@ -59,7 +59,7 @@ public class ImageToAsciiGUI extends JFrame {
         controlPanel.add(openImageButton);
 
         //warnings
-        messageArea = new JTextArea("for better results use ----> ( pixel-Size:2 but width must 3x of Height )");
+        messageArea = new JTextArea("For better results use ----> ( pixel-Size:2 or 3 but width must 3x or 2x of Height )");
         messageArea.setEditable(false);
         messageArea.setForeground(Color.RED);
         messageArea.setBackground(Color.BLACK);
@@ -77,7 +77,9 @@ public class ImageToAsciiGUI extends JFrame {
 
         // setting logo
         try {
-            BufferedImage iconImage = ImageIO.read(new File("profile.png"));
+            BufferedImage iconImage = ImageIO.read(getClass().getResourceAsStream("profile.png"));
+
+//            BufferedImage iconImage = ImageIO.read(new File("profile.png"));
             setIconImage(iconImage);
         } catch (IOException ex) {
             System.out.println("cant load image: " + ex.getMessage());
@@ -123,7 +125,7 @@ public class ImageToAsciiGUI extends JFrame {
         try {
             int fontSize = Integer.parseInt(fontSizeTextField.getText());
             asciiTextArea.setFont(new Font("Monospaced", Font.PLAIN, fontSize));
-            clearMessage(); // Clear any previous messages
+            //clearMessage(); // Clear any previous messages
         } catch (NumberFormatException ex) {
             displayMessage("enter a valid font size.");
         }
@@ -173,7 +175,7 @@ public class ImageToAsciiGUI extends JFrame {
 
 
     private char mapToAscii(int gray) {
-        char[] asciiChars = {'@', '#', '8', '&', 'o', ':', '*', '.', ' '}; // ASCII characters working as Pixles
+        char[] asciiChars = {' ', '.', '8', '&', 'o', ':', '*', '.', ' '}; // ASCII characters working as Pixles
         int index = (int) (gray * ((asciiChars.length - 1) / (255.0 * 0.7)));
         return asciiChars[index];
     }
