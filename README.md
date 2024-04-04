@@ -14,6 +14,7 @@ This is a simple Java application that converts an image into ASCII art. It allo
 
 ![Alt Text](./generatedSamples/sample1.png)
 
+[**more Samples**](./generatedSamples/samples.md)
 ## Instructions:
 
 1. Click the "Open Image" button to select an image file.
