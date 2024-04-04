@@ -12,7 +12,7 @@ This is a simple Java application that converts an image into ASCII art. It allo
 
 ## Samples
 
-![Alt Text]("./generatedSamples/sample1.png")
+![Alt Text](./generatedSamples/sample1.png)
 
 ## Instructions:
 
