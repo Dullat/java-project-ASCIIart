@@ -29,7 +29,7 @@ This is a simple Java application that converts an image into ASCII art. It allo
 - Ensure that the image file is accessible and compatible with the application.
 - Feedback and contributions are welcome on the developer's GitHub repository.
 
-## about:
+## About:
 
 This app is built for college assignment , feel free to update and modify
 Same thing but built on javaScript 
