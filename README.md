@@ -8,7 +8,8 @@ This is a simple Java application that converts an image into ASCII art. It allo
 - **Open Image:** Users can select an image file from their system using the "Open Image" button.
 - **Adjust Settings:** Users can adjust the pixel size, width, and height of the output ASCII art to customize the appearance of the final result.
 - **View ASCII Art:** The converted ASCII art is displayed in a text area within the application's window.
-- **GitHub Profile:** Users can click on a link to visit the developer's GitHub profile for more information or to provide feedback.
+- **Display Art:** Display the ASCII representation of the image in a text area.
+- **User Guide:** Provide Guidence and warnings.
 
 ## Samples
 
@@ -27,9 +28,11 @@ This is a simple Java application that converts an image into ASCII art. It allo
 - For better results, it is recommended to use images with a 1:1 aspect ratio.
 - Lower pixel size results in higher resolution but may increase the load on the system.
 - Ensure that the image file is accessible and compatible with the application.
-- Feedback and contributions are welcome on the developer's GitHub repository.
+- Feedback and contributions are welcome
 
 ## About:
 
 This app is built for college assignment , feel free to update and modify
-Same thing but built on javaScript 
+
+
+here is Same thing but built on javaScript: [ASCII art using js](https://github.com/dullat/)
